@@ -12,6 +12,31 @@ export class AppComponent {
   constructor(private toastrService:ToastrService){}
 
   showToast(){
-    this.toastrService.success("some text","title")
+    this.toastrService.success("some text","title",{
+      timeOut:1000,
+      progressBar:true,
+      progressAnimation:'increasing'
+      
+    })
+    // this.toastrService.error("some text","title",{
+    //   timeOut:1000,
+    //   progressBar:true,
+    //   progressAnimation:'increasing'
+      
+    // })
+
+    // this.toastrService.warining("some text","title",{
+    //   timeOut:1000,
+    //   progressBar:true,
+    //   progressAnimation:'increasing'
+      
+    // })
+
+    // this.toastrService.info("some text","title",{
+    //   timeOut:1000,
+    //   progressBar:true,
+    //   progressAnimation:'increasing'
+      
+    // })
   }
 }
